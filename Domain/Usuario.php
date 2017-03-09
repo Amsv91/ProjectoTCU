@@ -10,9 +10,13 @@ class Usuario{
     private $nombre;
     private $correo;
     private $contrasenia;
+    private $codigo;
     
     public function __construct() {
         
+    }
+     function getCodigo() {
+        return $this->codigo;
     }
     
     function getNombre() {
@@ -39,5 +43,9 @@ class Usuario{
         $this->contrasenia = $contrasenia;
     }
 
+function setCodigo($codigo) {
+        $this->codigo = $codigo;
+    }
+    
 
 }
